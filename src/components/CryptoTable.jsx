@@ -46,7 +46,7 @@ const CryptoTable = () => {
               <td className={`p-3 ${getColor(asset.change7d)}`}>{asset.change7d}%</td>
               <td className="p-3">${Number(asset.marketCap).toLocaleString()}</td>
 
-              {/* Volume + Volume Text */}
+           
               <td className="p-3">
                 <div className="flex flex-col text-sm">
                   <span>${Number(asset.volume).toLocaleString()}</span>
@@ -54,7 +54,7 @@ const CryptoTable = () => {
                 </div>
               </td>
 
-              {/* Supply + Symbol */}
+           
               <td className="p-3">
                 <div className="flex flex-col text-sm">
                   <span>{asset.supply}</span>
@@ -62,7 +62,7 @@ const CryptoTable = () => {
                 </div>
               </td>
 
-              {/* Chart Image */}
+              
               <td className="p-3">
                 <img src={asset.chart} alt={`${asset.symbol} chart`} className="h-15 w-full max-w-[100px]" />
               </td>
